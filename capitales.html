@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Capitales del Mundo</title>
+</head>
+<body>
+    <header>
+        <h1>Test de Capitales del Mundo</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="capitales.html">Test de Capitales del Mundo</a></li>
+                <li><a href="primera_guerra_mundial.html">Test sobre la 1º Guerra Mundial</a></li>
+                <li><a href="segunda_guerra_mundial.html">Test sobre la 2º Guerra Mundial</a></li>
+                <li><a href="monarquia_espanola.html">Test de la Monarquía Española</a></li>
+                <li><a href="pagina5.html">Repaso sobre las Capitales del Mundo</a></li>
+                <li><a href="pagina6.html">Repaso sobre la 1º Guerra Mundial</a></li>
+                <li><a href="pagina7.html">Repaso sobre la 2º Guerra Mundial</a></li>
+                <li><a href="pagina8.html">Repaso de la Monarquía Española</a></li>
+                <!-- Añade aquí los enlaces a las otras subpáginas -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <style>
+        /* Estilos CSS para mejorar la apariencia del test */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header{
+            text-align: center;
+            background-color: #007bff;
+            border-radius: 25px;
+        }
+
+        #quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+        }
+        h2 {
+            text-align: center;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <h2>Test de Capitales del Mundo</h2>
+        <div class="question">
+            <p>¿Cuál es la capital de Afganistán?</p>
+            <input type="text" id="answer1">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Albania?</p>
+            <input type="text" id="answer2">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Alemania?</p>
+            <input type="text" id="answer3">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Andorra?</p>
+            <input type="text" id="answer4">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Angola?</p>
+            <input type="text" id="answer5">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Antigua y Barbuda?</p>
+            <input type="text" id="answer6">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Francia?</p>
+            <input type="text" id="answer7">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Arabia Saudita?</p>
+            <input type="text" id="answer8">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Argelia?</p>
+            <input type="text" id="answer9">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Argentina?</p>
+            <input type="text" id="answer10">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Australia?</p>
+            <input type="text" id="answer11">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Austria?</p>
+            <input type="text" id="answer12">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Azerbaiyán?</p>
+            <input type="text" id="answer13">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Bahamas?</p>
+            <input type="text" id="answer14">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Bangladés?</p>
+            <input type="text" id="answer15">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Barbados?</p>
+            <input type="text" id="answer16">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Baréin?</p>
+            <input type="text" id="answer17">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Bélgica?</p>
+            <input type="text" id="answer18">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Belice?</p>
+            <input type="text" id="answer19">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Benín?</p>
+            <input type="text" id="answer20">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Bielorrusia?</p>
+            <input type="text" id="answer21">
+        </div><div class="question">
+            <p>¿Cuál es la capital de Myanmar?</p>
+            <input type="text" id="answer22">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Bolivia?</p>
+            <input type="text" id="answer23">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Bosnia y Herzegovina?</p>
+            <input type="text" id="answer24">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Botsuana?</p>
+            <input type="text" id="answer25">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Brasil?</p>
+            <input type="text" id="answer26">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Brunéi?</p>
+            <input type="text" id="answer27">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Bulgaria?</p>
+            <input type="text" id="answer28">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Burkina Faso?</p>
+            <input type="text" id="answer29">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Burundi?</p>
+            <input type="text" id="answer30">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Bután?</p>
+            <input type="text" id="answer31">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Cabo Verde?</p>
+            <input type="text" id="answer32">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Camboya?</p>
+            <input type="text" id="answer33">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Camerún?</p>
+            <input type="text" id="answer34">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Canadá?</p>
+            <input type="text" id="answer35">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Catar?</p>
+            <input type="text" id="answer36">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Chad?</p>
+            <input type="text" id="answer37">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Chile?</p>
+            <input type="text" id="answer38">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de China?</p>
+            <input type="text" id="answer39">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Chipre?</p>
+            <input type="text" id="answer40">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Ciudad del Vaticano?</p>
+            <input type="text" id="answer41">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Colombia?</p>
+            <input type="text" id="answer42">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Comoras?</p>
+            <input type="text" id="answer43">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Corea del Norte?</p>
+            <input type="text" id="answer44">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Corea del Sur?</p>
+            <input type="text" id="answer45">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Costa de Marfil?</p>
+            <input type="text" id="answer46">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Costa Rica?</p>
+            <input type="text" id="answer47">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Croacia?</p>
+            <input type="text" id="answer48">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Cuba?</p>
+            <input type="text" id="answer49">
+        </div>
+        <div class="question">
+            <p>¿Cuál es la capital de Dinamarca?</p>
+            <input type="text" id="answer50">
+        </div>
+
+
+        
+        <button onclick="calificarRespuestas()">Calificar</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function calificarRespuestas() {
+            var respuestasCorrectas = {
+                answer1: "Kabul",
+                answer2: "Tirana",
+                answer3: "Berlín",
+                answer4: "Andorra la Vieja",
+                answer5: "Luanda",
+                answer6: "Saint John's",
+                answer7: "París",
+                answer8: "Riad",
+                answer9: "Argel",
+                answer10: "Buenos Aires",
+                answer11: "Camberra",
+                answer12: "Viena",
+                answer13: "Bakú",
+                answer14: "Nasáu",
+                answer15: "Daca",
+                answer16: "Bridgetown",
+                answer17: "Manama",
+                answer18: "Bruselas",
+                answer19: "Belmopán",
+                answer20: "Porto Novo y Cotonú",
+                answer21: "Minsk",
+                answer22: "Naipyidó",
+                answer23: "Sucre",
+                answer24: "Sarajevo",
+                answer25: "Gaborone",
+                answer26: "Brasilia",
+                answer27: "Bandar Seri Begawan",
+                answer28: "Sofía",
+                answer29: "Uagadugú",
+                answer30: "Guitega",
+                answer31: "Timbu",
+                answer32: "Praia",
+                answer33: "Nom Pen",
+                answer34: "Yaundé",
+                answer35: "Ottawa",
+                answer36: "Doha",
+                answer37: "Yamena",
+                answer38: "Santiago de Chile",
+                answer39: "Pekín",
+                answer40: "Nicosia",
+                answer41: "Ciudad del Vaticano",
+                answer42: "Bogotá",
+                answer43: "Moroni",
+                answer44: "Pionyang",
+                answer45: "Seúl",
+                answer46: "Yamusukro",
+                answer47: "San José",
+                answer48: "Zagreb",
+                answer49: "La Habana",
+                answer50: "Copenhague",
+                
+                // Agrega más respuestas correctas aquí
+            };
+
+            var puntuacion = 0;
+            for (var pregunta in respuestasCorrectas) {
+                var respuestaUsuario = document.getElementById(pregunta).value.trim();
+                if (respuestaUsuario === respuestasCorrectas[pregunta]) {
+                    puntuacion++;
+                }
+            }
+
+            var resultado = "Has obtenido " + puntuacion + " puntos de " + Object.keys(respuestasCorrectas).length + ".";
+            document.getElementById("result").innerHTML = resultado;
+        }
+    </script>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Historia</p>
+    </footer>
+</body>
+</html>
