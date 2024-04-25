@@ -1,143 +1,168 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test de la 1º Guerra Mundial</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Test de la 1º Guerra Mundial</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pagina5.html">Repaso sobre las Capitales del Mundo</a></li>
-                <li><a href="pagina6.html">Repaso sobre la 1º Guerra Mundial</a></li>
-                <li><a href="pagina7.html">Repaso sobre la 2º Guerra Mundial</a></li>
-                <li><a href="pagina8.html">Repaso de la Monarquía Española</a></li>
+                <button><a href="index.html">Inicio</a></button>
+                <button><a href="capitales.html">Test de Capitales del Mundo</a></button>
+                <button><a href="segunda_guerra_mundial.html">Test sobre la 2º Guerra Mundial</a></button>
+                <button><a href="monarquia_espanola.html">Test de la Monarquía Española</a></button>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h2>Índice</h2>
-        <ul>
-            <li><a href="capitales.html">Test de Capitales del Mundo</a></li>
-            <li><a href="primera_guerra_mundial.html">Test sobre la 1º Guerra Mundial</a></li>
-            <li><a href="segunda_guerra_mundial.html">Test sobre la 2º Guerra Mundial</a></li>
-            <li><a href="monarquia_espanola.html">Test de la Monarquía Española</a></li>
-        </ul>
-            <head>
-                <style>
-                    body {
+
+        <head>
+            <style>
+                body {
                     font-family: Arial, sans-serif;
-                    }
-                    #quiz-container {
+                    background-color: #191919;
+                    margin: 0 auto;
+                }
+
+                header {
+                    color: #fff;
+                    text-align: center;
+                    background-color: #070707;
+                    border: 4mm ridge rgba(18, 73, 224, 0.6);
+                }
+
+                #quiz-container {
                     max-width: 600px;
                     margin: 0 auto;
                     padding: 20px;
-                    border: 1px solid #ccc;
-                    border-radius: 5px;
-                    }
-                    h2 {
+                    background-color: #1F1F1F;
+                    border: 4mm ridge rgba(18, 73, 224, 0.6);
+                }
+
+                h2 {
                     text-align: center;
-                    }
-                    .question {
+                }
+
+                ul {
+                    text-align: center;
+                }
+
+                .question {
                     margin-bottom: 20px;
-                    }
-                    button {
+                }
+
+                button {
                     padding: 10px 20px;
                     background-color: #007bff;
                     color: #fff;
                     border: none;
                     border-radius: 5px;
                     cursor: pointer;
-                    }
-                    button:hover {
-                    background-color: #0056b3;
-                    }
-                </style>
-            </head>
-        <body>
-        <div id="quiz-container">
-            <h2>Test de la Primera Guerra Mundial</h2>
-            <div class="question">
-                <p>¿Qué desencadenó la Primera Guerra Mundial?</p>
-                <input type="text" id="answer1">
-            </div>
-            <div class="question">
-                <p>¿Qué sucedió el 24/12/1914?</p>
-                <input type="text" id="answer2">
-            </div>
-            <div class="question">
-                <p>¿Qué sucedió el 25/4/1915?</p>
-                <input type="text" id="answer3">
-            </div>
-            <div class="question">
-                <p>¿Qué armas químicas se utilizaron?</p>
-                <input type="text" id="answer4">
-            </div>
-            <div class="question">
-                <p>¿Qué sucedió el 7/5/1915?</p>
-                <input type="text" id="answer5">
-            </div>
-            <div class="question">
-                <p>¿Qué sucedió el 21/2/1916?</p>
-                <input type="text" id="answer6">
-            </div>
-            <div class="question">
-                <p>¿Qué sucedió el 1/7/1916?</p>
-                <input type="text" id="answer7">
-            </div>
-            <div class="question">
-                <p>¿Qué sucedió el 3/3/1918?</p>
-                <input type="text" id="answer8">
-            </div>
-            <div class="question">
-                <p>¿Qué sucedió el 11/11/1918?</p>
-                <input type="text" id="answer9">
-            </div>
-            <div class="question">
-                <p>¿Quienes eran los Aliados durante la 1ºGuerra Mundial?</p>
-                <input type="text" id="answer10">
-            </div>
-    
-            <button onclick="calificarRespuestas()">Calificar</button>
-            <div id="result"></div>
-        </div>
-    
-        <script>
-            function calificarRespuestas() {
-                var respuestasCorrectas = {
-                    answer1: "El asesinato del archiduque Francisco Fernando de Austria",
-                    answer2: "La Tregua de Navidad",
-                    answer3: "La Batalla de Galípoli",
-                    answer4: "Gas de Cloro",
-                    answer5: "El Hundimiento del Lusitania",
-                    answer6: "La Batalla de Verdún",
-                    answer7: "La Batalla del Somme",
-                    answer8: "La Paz de Brest-Litovsk",
-                    answer9: "El armisticio de Compiègne",
-                    answer10: "Bélgica,Serbia,Montenegro,Francia,Ruso,Reino Unido,Italia,EEUU"
-                };
-    
-                var puntuacion = 0;
-                for (var pregunta in respuestasCorrectas) {
-                    var respuestaUsuario = document.getElementById(pregunta).value.trim();
-                    if (respuestaUsuario === respuestasCorrectas[pregunta]) {
-                        puntuacion++;
-                    }
                 }
-    
-                var resultado = "Has obtenido " + puntuacion + " puntos de " + Object.keys(respuestasCorrectas).length + ".";
-                document.getElementById("result").innerHTML = resultado;
-            }
-        </script>
-        
+
+                button:hover {
+                    background-color: #0056b3;
+                    text-align: center;
+                }
+            </style>
+        </head>
+
+        <body>
+            <div id="quiz-container">
+                <h2>Test de la Primera Guerra Mundial</h2>
+                <div class="question">
+                    <p>¿Qué desencadenó la Primera Guerra Mundial?</p>
+                    <input type="text" id="answer1">
+                </div>
+                <div class="question">
+                    <p>¿Qué sucedió el 24/12/1914?</p>
+                    <input type="text" id="answer2">
+                </div>
+                <div class="question">
+                    <p>¿Qué sucedió el 25/4/1915?</p>
+                    <input type="text" id="answer3">
+                </div>
+                <div class="question">
+                    <p>¿Qué armas químicas se utilizaron?</p>
+                    <input type="text" id="answer4">
+                </div>
+                <div class="question">
+                    <p>¿Qué sucedió el 7/5/1915?</p>
+                    <input type="text" id="answer5">
+                </div>
+                <div class="question">
+                    <p>¿Qué sucedió el 21/2/1916?</p>
+                    <input type="text" id="answer6">
+                </div>
+                <div class="question">
+                    <p>¿Qué sucedió el 1/7/1916?</p>
+                    <input type="text" id="answer7">
+                </div>
+                <div class="question">
+                    <p>¿Qué sucedió el 3/3/1918?</p>
+                    <input type="text" id="answer8">
+                </div>
+                <div class="question">
+                    <p>¿Qué sucedió el 11/11/1918?</p>
+                    <input type="text" id="answer9">
+                </div>
+                <div class="question">
+                    <p>¿Quienes eran los Aliados durante la 1ºGuerra Mundial?</p>
+                    <input type="text" id="answer10">
+                </div>
+
+                <button onclick="calificarRespuestas()">Calificar</button>
+                <div id="result"></div>
+            </div>
+
+            <script>
+                function calificarRespuestas() {
+                    var respuestasCorrectas = {
+                        answer1: "El asesinato del archiduque Francisco Fernando de Austria",
+                        answer2: "La Tregua de Navidad",
+                        answer3: "La Batalla de Galípoli",
+                        answer4: "Gas de Cloro",
+                        answer5: "El Hundimiento del Lusitania",
+                        answer6: "La Batalla de Verdún",
+                        answer7: "La Batalla del Somme",
+                        answer8: "La Paz de Brest-Litovsk",
+                        answer9: "El armisticio de Compiègne",
+                        answer10: "Bélgica,Serbia,Montenegro,Francia,Ruso,Reino Unido,Italia,EEUU"
+                    };
+
+                    var puntuacion = 0;
+                    for (var pregunta in respuestasCorrectas) {
+                        var respuestaUsuario = document.getElementById(pregunta).value.trim();
+                        if (respuestaUsuario === respuestasCorrectas[pregunta]) {
+                            puntuacion++;
+                        }
+                    }
+
+                    var resultado = "Has obtenido " + puntuacion + " puntos de " + Object.keys(respuestasCorrectas).length + ".";
+                    document.getElementById("result").innerHTML = resultado;
+                }
+            </script>
+
     </main>
 
     <footer>
-        <p>&copy; 2024 Historia</p>
+        <div class="footer-txt">
+            <h2>Vídeos de repaso</h2>
+            <a href="https://www.youtube.com/watch?v=Vbu6tH0Hc-o">Vídeo 1</a>
+            <a href="https://www.youtube.com/watch?v=2hoBtigTRHo">Vídeo 2</a>
+            <a href="https://www.youtube.com/watch?v=nBlTdwJiXoE">Vídeo 3</a>
+            <p>
+                David Diaz Cancela/david.diaz.cancela@gmail.com
+            </p>
+        </div>
     </footer>
 </body>
+
 </html>
